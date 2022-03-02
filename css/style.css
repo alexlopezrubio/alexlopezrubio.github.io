@@ -1046,3 +1046,8 @@ input[type=text], select, textarea {
         text-align: center;
     }
 }
+
+/* Duracion de la animacion fadein hero*/
+ .animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+} 
