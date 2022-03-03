@@ -158,6 +158,8 @@
 
 /* Inicio hero  */
 
+
+
 .hero {
     position: relative;
     display: flex;
@@ -248,6 +250,12 @@
 }
 
 /* Inicio info producto principal Raspberry Pi 4 */
+
+/* Cambios Bootstrap */
+
+h1.display-5.fw-bold.lh-1.mb-3 {
+    color: #cd2355;
+}
 
 .headline-raspberry-pi4 {
     display:flex;
