@@ -754,7 +754,7 @@ code {
     display: block;
     width: 2.375rem;
     height: 2.375rem;
-    line-height: 3rem;
+    line-height: 2.375rem;
     text-align: center;
     pointer-events: none;
     color: #aaa;
@@ -816,39 +816,16 @@ a.servicio-documentacion span {
 
 /* Inicia seccion de contacto */
 
-/* Estilo Forma de contacto */
+/* Estilo Forma de contacto con bootstrap */
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .contenedor-forma-contacto {
-    border-radius: 5px;
-    width: 70%;
-    padding-top: 8em;
-    padding-bottom: 2em;
-    margin: 0 auto;
-    max-width: 40em;
+.forma-contacto {
+    position: relative;
+    padding: 1rem;
+    margin-top: 6rem;
+}
+
+.form-control {
+    margin-bottom: 1em;
 }
 
   /* Estilo Mapa */
