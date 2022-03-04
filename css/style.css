@@ -448,8 +448,8 @@ footer p {
 .iconos-social .facebook:hover,
 .iconos-social .facebook:hover .tooltip,
 .iconos-social .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+    background-color: #3b5999;
+    color: #ffffff;
 }
 
 .iconos-social .twitter:hover,
@@ -469,8 +469,8 @@ footer p {
 .iconos-social .github:hover,
 .iconos-social .github:hover .tooltip,
 .iconos-social .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
+    background-color: #333333;
+    color: #ffffff;
 }
 
 .iconos-social .youtube:hover,
@@ -483,6 +483,53 @@ footer p {
 /* ------ Inicia Seccion de Hardware ---- */
 
 /* Producto Principal */
+
+/* Aplicando bootstrap a grid */
+
+
+.bgimage {
+  width:100%;
+  height:500px;
+  background: url('../img/section-image-bg-raspberry-pi.jpg');
+
+  background-repeat: no-repeat;
+  background-position: 0 -20em;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.bgimage h5 {
+  color:white;
+  text-shadow:2px 2px #333;
+}
+
+img.rounded.mx-auto.d-block {
+    margin-left: 0 !important;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #a90634 !important;
+    border-color: #de463b !important;
+}
+
+.boton-mas-info::hover {
+    background-color: blue;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
 
 .contenedor-productos {
     padding-top: 4em;
@@ -1031,6 +1078,10 @@ input[type=text], select, textarea {
     .producto-principal-lista p {
         width: 90%;
     }
+
+    .bgimage {
+        display: none; /*Ocultar imagen bootstrap */
+    }
 }
 
 
@@ -1053,4 +1104,5 @@ input[type=text], select, textarea {
         width: 100%;
         text-align: center;
     }
+
 }
