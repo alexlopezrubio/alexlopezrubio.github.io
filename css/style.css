@@ -497,6 +497,7 @@ footer p {
   background-size:cover;
   background-attachment: fixed;
 }
+
 .bgimage h5 {
   color:white;
   text-shadow:2px 2px #333;
@@ -615,6 +616,18 @@ button {
 }
 
 /* ------ Inicia Seccion de Software ---- */
+
+ /* Imagen de seccion Bootstrap */
+
+.bgimage-software {
+  width:100%;
+  height:500px;
+  background: url('../img/software-section-image-raspberry-pi.jpeg');
+  background-repeat: no-repeat;
+  background-position: -10px -20em;
+  background-size:cover;
+  background-attachment: fixed;
+}
 
 .info-software {
     padding-top: 8em;
@@ -1069,8 +1082,6 @@ input[type=text], select, textarea {
 }
 
 
-
-
 /* Inicia Seccion Software */
 
 @media (max-width: 900px) {
@@ -1088,14 +1099,13 @@ input[type=text], select, textarea {
         width: 100%;
         text-align: center;
     }
-<<<<<<< HEAD
+    
+    .bgimage-software {
+        display: none; /*Ocultar imagen bootstrap */   
+    }
 }
 
 /* Duracion de la animacion fadein hero*/
  .animate__animated.animate__fadeIn {
   --animate-duration: 3s;
 } 
-=======
-
-}
->>>>>>> master
