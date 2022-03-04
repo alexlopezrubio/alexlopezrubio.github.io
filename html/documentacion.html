@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/2fa06a8c08.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Documentación</title>
 </head>
 
@@ -43,16 +44,12 @@
             <h2>La documentación oficial de Computadoras Raspberry Pi y microcontroladores</h2>
         </div>
 
-        <div class="buscador">
-		<div class="buscador-contendor">
-			<form class="buscacor--forma" action="#" method="post">
-				<div class="buscador-contenedor-input">
-					<input class="buscador--input" type="search" placeholder="Buscar información...">
-				</div>
-				<!-- <input class="flexsearch--submit" type="search"/> -->
-			</form>
-		</div>
-</div>
+        <!-- Barra de busqueda bootstrap con icono -->
+        <div class="centrar-barra-busqueda">
+        <div class="has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" placeholder="Buscar">
+        </div>
 
         <!-- Categorias documentacion -->
 
@@ -153,4 +150,5 @@
         </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

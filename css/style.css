@@ -737,79 +737,27 @@ code {
 }
 
 
-/***********************
- * Estuctura del buscador *
- ***********************/
-.buscador-contenedor {
-	height: auto;
-	width: auto;
-	max-width: 100%;
-	overflow: hidden;
-	background: transparent;
-	margin: 0;
-	position: static;
-    z-index: -1;
-}
-	
-.buscador--forma {
-	overflow: hidden;
-	position: relative;
-}
-	
-.buscador-contenedor-input {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
+/* Barra de busqueda bootstrap con icono */
+
+.centrar-barra-busqueda {
+    width: 50%;
+    margin: 50px auto;
 }
 
-.buscador--input {
-  width: 100%;
+.has-search .form-control {
+    padding-left: 2.375rem;
 }
 
-
- /* Barra de busqueda en documentos */
-
-.buscador {
-  padding: 1em 2em 0 2em; 
-}
-
-.buscador--input {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 4em;
-    padding: 0 2em 0 2em;
-    border-color: #aaa;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 15px;
-    color: #333;
-    font-size: 1rem;
-    -webkit-appearance: none;
-    font-weight: 300;
-    -moz-appearance: none;
-}
-
-.buscador--input:focus {
-  outline: none;
-  border-color: #333;
-}
-
-.buscador--input:focus.buscador--submit {
- 	color: #333; 
-}
-
-.buscador--submit:hover {
-  color: #333;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
-	color: #888;  
-}
-
-input:-moz-placeholder {
-  color: #888
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 3rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }
 
   /* Lista Grid Documentacion */
