@@ -846,8 +846,15 @@ a.servicio-documentacion span {
 }
 
 /* Inicia seccion de contacto */
-
 /* Estilo Forma de contacto con bootstrap */
+
+/* Agregando animacion a boton de envio */
+
+#medida-boton-enviar {
+    width: 150px;
+    height: 50px;
+}
+
 
 .forma-contacto {
     position: relative;
@@ -1039,6 +1046,70 @@ a.servicio-documentacion span {
 
 
 /* Inicia Seccion Software */
+
+/* Agregando nuevos botones animados con hover para descarga Windows y Mac Store */
+
+.contenedor-descargas {
+    width: 100%;
+    position: relative;
+    margin: 3em;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.descargar {
+    width: 200px;
+    height: 75px;
+    background: black;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.descargar > .fa {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+    position: absolute;
+    left: 70px;
+}
+
+.df {
+    top: 20px;
+    font-size: .68em;
+}
+
+.dfn {
+    top: 33px;
+    font-size: 1.08em;
+}
+
+.descargar:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
 
 @media (max-width: 900px) {
     .info-software img {
