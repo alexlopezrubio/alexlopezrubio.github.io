@@ -158,7 +158,32 @@
 
 /* Inicio hero  */
 
+/* Efecto de animacion en texto del hero */
 
+.hero-texto-h1 h1 {
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    overflow: hidden; /* Muestrar contenido despues de la animacion */
+    border-right: .15em solid red; /* Cursor animado */
+    white-space: nowrap; /* Mantener contanido en una sola linea */
+    margin: 0 auto; /* Efecto de texto scrolling */
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* Efecto de tecleado */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Efecto del cursor escribiendo */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red }
+}
 
 .hero {
     position: relative;
@@ -169,17 +194,18 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    margin-top: 4em;
-    z-index: -1; 
+    margin-top: 5em;
+    
 }
 
 .hero-image {
     display: flex;
+    margin: 0 auto;
 }
 
 .hero .hero-texto {
-    max-width: 40%;
-    padding-left: 2em;
+    max-width: 30%;
+    padding-left: 5em;
 }
 
 .hero .hero-texto .hero-texto-h2 {
@@ -187,6 +213,7 @@
     padding-bottom: 20px;
     color: #fff;
 }
+
 
  .hero-texto-titulo {
     font-weight: 300;
@@ -234,6 +261,10 @@
     cursor: pointer;
     margin-right: 2rem;
 }
+
+ a:hover.link-barra-menu-hero {
+     color: var(--bs-orange);
+ }
 
 .boton-cta {
     background-color: #53ce63;
