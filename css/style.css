@@ -4,8 +4,8 @@
 /* Media Quaries para mobil inicia en linea 760 */
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -30,16 +30,8 @@
 
 /* Estilo logo */
 
-.logo a {
-    display: block;
-    width: 100%;
-
-}
-
-.logo a img {
-    display: block;
-    width: 100%;
-
+.logo {
+    width: 200px;
 }
 
 /* Menu de navegacion */
@@ -194,8 +186,8 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    margin-top: 5em;
-    
+    margin-top: 4.7em;
+    z-index: -1;
 }
 
 .hero-image {
@@ -939,7 +931,7 @@ a.servicio-documentacion span {
         flex-direction: column;
         align-items: center;
         position: fixed;
-        top: 4em;
+        top: 17.5em;
         right: -125%;
         background: #fff;
         width: 100%;
@@ -972,6 +964,7 @@ a.servicio-documentacion span {
         align-items: flex-start;
         flex-direction: column;
         background-size: 100% 100%;
+        margin-top: 4em;
     }
     
     /* Ajustes para hero mobil  */
@@ -1055,7 +1048,7 @@ a.servicio-documentacion span {
     margin: 3em;
 }
 
-ul {
+.contenedor-descargas ul {
     width: 100%;
     text-align: center;
     margin: 0;
@@ -1065,9 +1058,9 @@ ul {
     transform: translateY(-50%);
 }
 
-li {
+.contenedor-descargas li {
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
 }
 
 .descargar {
