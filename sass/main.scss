@@ -1,0 +1,26 @@
+// Resets generales
+@import './base/resets';
+
+// variables colores
+@import './abstracts/variables';
+
+// Header
+@import './layout/header';
+
+// Hero
+@import './layout/hero';
+
+// Producto principal
+@import './components/producto';
+
+// Estilo video
+@import './components/video';
+
+// Estilo footer
+@import './layout/footer';
+
+// Redes Sociales
+@import './layout/social';
+
+// Secciones sin SCSS
+@import './layout/secciones';
