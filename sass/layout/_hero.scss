@@ -1,123 +1,117 @@
 /* Inicio hero  */
-
 /* Efecto de animacion en texto del hero */
-
-.hero-texto-h1 h1 {
-    color: #fff;
-    display: flex;
-    justify-content: left;
-    overflow: hidden; /* Muestrar contenido despues de la animacion */
-    border-right: .15em solid red; /* Cursor animado */
-    white-space: nowrap; /* Mantener contanido en una sola linea */
-    margin: 0 auto; /* Efecto de texto scrolling */
-    animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
 /* Efecto de tecleado */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes "typing" {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
 }
-
 /* Efecto del cursor escribiendo */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: red }
+@keyframes "blink-caret" {
+	from,to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: red;
+	}
 }
-
+.hero-texto-h1 {
+	h1 {
+		color: $blanco;
+		display: flex;
+		justify-content: left;
+		overflow: hidden;
+		border-right: .15em solid red;
+		white-space: nowrap;
+		margin: 0 auto;
+		animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+	}
+}
 .hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-image: url(../img/fondo-hero.svg),linear-gradient(180deg,#c41949,#a90634);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    margin-top: 4.7em;
-    z-index: -1;
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-image: url(../img/fondo-hero.svg),linear-gradient(180deg,#c41949,#a90634);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	margin-top: 4.7em;
+	z-index: -1;
+	.hero-texto {
+		max-width: 50%;
+		padding-left: 5em;
+		.hero-texto-h2 {
+			font-size: 3rem;
+			padding-bottom: 20px;
+			color: $blanco;
+		}
+		.hero-texto-parrafo {
+			color: $blanco;
+			width: 70%;
+			line-height: 1.6rem;
+			font-weight: 100;
+		}
+	}
 }
-
 .hero-image {
-    display: flex;
-    margin: 0 auto;
+	display: flex;
+	margin: 0 auto;
 }
-
-.hero .hero-texto {
-    max-width: 50%;
-    padding-left: 5em;
+.hero-texto-titulo {
+	font-weight: 300;
+	color: $blanco;
+	font-size: 1.2rem;
 }
-
-.hero .hero-texto .hero-texto-h2 {
-    font-size: 3rem;
-    padding-bottom: 20px;
-    color: #fff;
-}
-
-
- .hero-texto-titulo {
-    font-weight: 300;
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-.hero .hero-texto .hero-texto-parrafo {
-    color: #fff;
-    width: 70%;
-    line-height: 1.6rem;
-    font-weight: 100;
-}
-
 .barra-menu-hero {
-    position: absolute;
-    display: flex;
-    align-content: flex-start;
-    align-items: center;
-    width: 100%;
-    bottom:0;
-    left: 0;
-    padding-bottom: 1rem;
-    padding-top:1rem;
-    background-color: rgba(144,15,59,.7);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    justify-content: center;
+	position: absolute;
+	display: flex;
+	align-content: flex-start;
+	align-items: center;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	background-color: rgba(144,15,59,.7);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	justify-content: center;
 }
-
 .contenedor-barra-hero {
-    max-width: 60em;
-    width: 100%;
-    display: flex;
-    align-items: center;
+	max-width: 60em;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
-
 .link-barra-menu-hero {
-    color:#fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin-right: 2rem;
+	color: $blanco;
+	text-decoration: none;
+	font-size: 0.9rem;
+	cursor: pointer;
+	margin-right: 2rem;
 }
-
- a:hover.link-barra-menu-hero {
-     color: var(--bs-orange);
- }
-
+a {
+	&:hover.link-barra-menu-hero {
+		color: orange;
+	}
+}
 .boton-cta {
-    background-color: #53ce63;
-    border-radius: 5px;
-    color:#fff;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    text-decoration: none;
-    font-size: 1rem;
-    width: auto;
-    padding: 0.5em 1.2em;
-    border: none;
+	background-color: $verde;
+	border-radius: 5px;
+	color: $blanco;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: auto;
+	text-decoration: none;
+	font-size: 1rem;
+	width: auto;
+	padding: 0.5em 1.2em;
+	border: none;
 }

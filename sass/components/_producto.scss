@@ -1,62 +1,50 @@
 /* Inicio info producto principal Raspberry Pi 4 */
-
 /* Cambios Bootstrap */
-
 h1.display-5.fw-bold.lh-1.mb-3 {
-    color: #cd2355;
+	color: #cd2355;
 }
-
 .headline-raspberry-pi4 {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	h2 {
+		margin-top: 20px;
+		font-size: 2rem;
+		font-weight: 300;
+	}
+	p {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
 }
-
-.headline-raspberry-pi4 h2 {
-    margin-top: 20px;
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.headline-raspberry-pi4 p {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
 .contenedor-info-producto-raspberry-pi4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    margin: 0 10em 0 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin: 0 10em 0 10em;
 }
-
 .imagen-raspberry-pi4 {
-     flex-basis: 50%;
+	flex-basis: 50%;
+	img {
+		max-width: 100%;
+	}
 }
-
-.imagen-raspberry-pi4 img {
-    max-width: 100%;
-    
-}
-
 .info-producto-raspberry-pi4 {
-    flex-basis: 50%;
-    max-width: 20em;
-}
-
-.info-producto-raspberry-pi4 h2 {
-    display: flex;
-    color:#cd2355;
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.info-producto-raspberry-pi4 p {
-    grid-area: subtitulo;
-    color:#333;
-    line-height: 1.5;
-    font-size: 1.1rem;
-    font-weight: 300;
+	flex-basis: 50%;
+	max-width: 20em;
+	h2 {
+		display: flex;
+		color: #cd2355;
+		font-size: 2rem;
+		font-weight: 300;
+	}
+	p {
+		grid-area: subtitulo;
+		color: #333;
+		line-height: 1.5;
+		font-size: 1.1rem;
+		font-weight: 300;
+	}
 }

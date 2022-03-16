@@ -14,7 +14,7 @@
 
 .iconos-social .icono {
     position: relative;
-    background-color: #ffffff;
+    background-color: $blanco;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -33,8 +33,8 @@
     position: absolute;
     top: 0;
     font-size: 14px;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: $blanco;
+    color: $blanco;
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@
     content: "";
     height: 8px;
     width: 8px;
-    background-color: #ffffff;
+    background-color: $blanco;
     bottom: -3px;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
@@ -70,34 +70,34 @@
 .iconos-social .facebook:hover,
 .iconos-social .facebook:hover .tooltip,
 .iconos-social .facebook:hover .tooltip::before {
-    background-color: #3b5999;
-    color: #ffffff;
+    background-color: $facebook;
+    color: $blanco;
 }
 
 .iconos-social .twitter:hover,
 .iconos-social .twitter:hover .tooltip,
 .iconos-social .twitter:hover .tooltip::before {
-    background-color: #46c1f6;
-    color: #ffffff;
+    background-color: $twitter;
+    color: $blanco;
 }
 
 .iconos-social .instagram:hover,
 .iconos-social .instagram:hover .tooltip,
 .iconos-social .instagram:hover .tooltip::before {
-    background-color: #e1306c;
-    color: #ffffff;
+    background-color: $instagram;
+    color: $blanco;
 }
 
 .iconos-social .github:hover,
 .iconos-social .github:hover .tooltip,
 .iconos-social .github:hover .tooltip::before {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: $github;
+    color: $blanco;
 }
 
 .iconos-social .youtube:hover,
 .iconos-social .youtube:hover .tooltip,
 .iconos-social .youtube:hover .tooltip::before {
-    background-color: #de463b;
-    color: #ffffff;
+    background-color: $youtube;
+    color: $blanco;
 }

@@ -138,33 +138,29 @@
 
 /* Inicio hero  */
 /* Efecto de animacion en texto del hero */
-.hero-texto-h1 h1 {
-  color: #fff;
-  display: flex;
-  justify-content: left;
-  overflow: hidden;
-  /* Muestrar contenido despues de la animacion */
-  border-right: .15em solid red;
-  /* Cursor animado */
-  white-space: nowrap;
-  /* Mantener contanido en una sola linea */
-  margin: 0 auto;
-  /* Efecto de texto scrolling */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
-
 /* Efecto de tecleado */
-@keyframes typing {
+@keyframes "typing" {
   from {
     width: 0; }
   to {
     width: 100%; } }
 
 /* Efecto del cursor escribiendo */
-@keyframes blink-caret {
+@keyframes "blink-caret" {
   from, to {
     border-color: transparent; }
   50% {
     border-color: red; } }
+
+.hero-texto-h1 h1 {
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  overflow: hidden;
+  border-right: .15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
 
 .hero {
   position: relative;
@@ -177,30 +173,27 @@
   width: 100%;
   margin-top: 4.7em;
   z-index: -1; }
+  .hero .hero-texto {
+    max-width: 50%;
+    padding-left: 5em; }
+    .hero .hero-texto .hero-texto-h2 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+      color: #fff; }
+    .hero .hero-texto .hero-texto-parrafo {
+      color: #fff;
+      width: 70%;
+      line-height: 1.6rem;
+      font-weight: 100; }
 
 .hero-image {
   display: flex;
   margin: 0 auto; }
 
-.hero .hero-texto {
-  max-width: 50%;
-  padding-left: 5em; }
-
-.hero .hero-texto .hero-texto-h2 {
-  font-size: 3rem;
-  padding-bottom: 20px;
-  color: #fff; }
-
 .hero-texto-titulo {
   font-weight: 300;
   color: #fff;
   font-size: 1.2rem; }
-
-.hero .hero-texto .hero-texto-parrafo {
-  color: #fff;
-  width: 70%;
-  line-height: 1.6rem;
-  font-weight: 100; }
 
 .barra-menu-hero {
   position: absolute;
@@ -234,7 +227,7 @@
   margin-right: 2rem; }
 
 a:hover.link-barra-menu-hero {
-  color: var(--bs-orange); }
+  color: orange; }
 
 .boton-cta {
   background-color: #53ce63;
@@ -258,16 +251,14 @@ h1.display-5.fw-bold.lh-1.mb-3 {
   display: flex;
   align-items: center;
   flex-direction: column; }
-
-.headline-raspberry-pi4 h2 {
-  margin-top: 20px;
-  font-size: 2rem;
-  font-weight: 300; }
-
-.headline-raspberry-pi4 p {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 20px; }
+  .headline-raspberry-pi4 h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 300; }
+  .headline-raspberry-pi4 p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px; }
 
 .contenedor-info-producto-raspberry-pi4 {
   display: flex;
@@ -278,26 +269,23 @@ h1.display-5.fw-bold.lh-1.mb-3 {
 
 .imagen-raspberry-pi4 {
   flex-basis: 50%; }
-
-.imagen-raspberry-pi4 img {
-  max-width: 100%; }
+  .imagen-raspberry-pi4 img {
+    max-width: 100%; }
 
 .info-producto-raspberry-pi4 {
   flex-basis: 50%;
   max-width: 20em; }
-
-.info-producto-raspberry-pi4 h2 {
-  display: flex;
-  color: #cd2355;
-  font-size: 2rem;
-  font-weight: 300; }
-
-.info-producto-raspberry-pi4 p {
-  grid-area: subtitulo;
-  color: #333;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-weight: 300; }
+  .info-producto-raspberry-pi4 h2 {
+    display: flex;
+    color: #cd2355;
+    font-size: 2rem;
+    font-weight: 300; }
+  .info-producto-raspberry-pi4 p {
+    grid-area: subtitulo;
+    color: #333;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 300; }
 
 /* Estilos del video iframe con background full with */
 .imagen-video {
@@ -334,24 +322,22 @@ footer {
   bottom: 0;
   left: 0;
   overflow: hidden; }
-
-footer h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: 400;
-  font-size: 1rem; }
-
-footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  font-size: 0.8rem;
-  font-weight: 300; }
+  footer h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 400;
+    font-size: 1rem; }
+  footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 300; }
 
 /* Redes Sociales */
 *:focus,
@@ -366,7 +352,7 @@ footer p {
 
 .iconos-social .icono {
   position: relative;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
@@ -384,8 +370,8 @@ footer p {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: #fff;
+  color: #fff;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -398,7 +384,7 @@ footer p {
   content: "";
   height: 8px;
   width: 8px;
-  background-color: #ffffff;
+  background-color: #fff;
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
@@ -418,31 +404,31 @@ footer p {
 .iconos-social .facebook:hover .tooltip,
 .iconos-social .facebook:hover .tooltip::before {
   background-color: #3b5999;
-  color: #ffffff; }
+  color: #fff; }
 
 .iconos-social .twitter:hover,
 .iconos-social .twitter:hover .tooltip,
 .iconos-social .twitter:hover .tooltip::before {
   background-color: #46c1f6;
-  color: #ffffff; }
+  color: #fff; }
 
 .iconos-social .instagram:hover,
 .iconos-social .instagram:hover .tooltip,
 .iconos-social .instagram:hover .tooltip::before {
   background-color: #e1306c;
-  color: #ffffff; }
+  color: #fff; }
 
 .iconos-social .github:hover,
 .iconos-social .github:hover .tooltip,
 .iconos-social .github:hover .tooltip::before {
   background-color: #333333;
-  color: #ffffff; }
+  color: #fff; }
 
 .iconos-social .youtube:hover,
 .iconos-social .youtube:hover .tooltip,
 .iconos-social .youtube:hover .tooltip::before {
   background-color: #de463b;
-  color: #ffffff; }
+  color: #fff; }
 
 /* ------ Inicia Seccion de Hardware ---- */
 /* Producto Principal */
