@@ -124,7 +124,7 @@
 
 /* Inicia menu navegacion mobil 900px hacia abajo */
 
-@media (max-width: 900px) {
+@include tablet {
     .hamburger,
     .toggle-menu {
         display: block;
@@ -165,3 +165,25 @@
         }
     }
  }
+
+ /* Ajustes de Producto principal mobile de 1300px hacia abajo */
+
+@include desktop {
+  .contenedor-info-producto-raspberry-pi4 {
+    flex-direction: column;
+    margin: 0 2em 0 2em;
+  }
+
+  .info-producto-raspberry-pi4 {
+    max-width: 100%;
+
+    h2 {
+      text-align: center;
+      display: block;
+    }
+  }
+
+  .headline-raspberry-pi4 h2 {
+    font-size: 1rem;
+  }
+}

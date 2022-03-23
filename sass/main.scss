@@ -4,6 +4,9 @@
 // variables colores
 @import './abstracts/variables';
 
+// Mixins
+@import './components/mixins';
+
 // Header
 @import './layout/header';
 
@@ -22,5 +25,14 @@
 // Redes Sociales
 @import './layout/social';
 
-// Secciones sin SCSS
-@import './layout/secciones';
+// Seccion Hardware
+@import './components/grids-hardware';
+
+// Seccion Software
+@import './components/info-software';
+
+// Seccion Documentacion
+@import './components/info-documentacion';
+
+// Seccion Contacto
+@import './components/forma-contacto';

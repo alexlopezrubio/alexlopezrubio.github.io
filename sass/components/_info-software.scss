@@ -1,0 +1,149 @@
+/* ------ Inicia Seccion de Software ---- */
+
+/* Imagen de seccion Bootstrap */
+
+.bgimage-software {
+  width: 100%;
+  height: 500px;
+  background: url('../img/software-section-image-raspberry-pi.jpeg');
+  background-repeat: no-repeat;
+  background-position: -10px -20em;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.info-software {
+  padding-top: 8em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 500px;
+  }
+}
+
+.texto-info-software {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 70%;
+  }
+}
+
+#justificar-texto-info-software {
+  text-align: justify;
+}
+
+.texto-info-software {
+  a {
+    text-decoration: none;
+    color: $gris-base;
+    border-bottom: 3px solid $rojo-base;
+  }
+
+  #boton-mac {
+    margin-left: revert;
+    margin: 20px;
+  }
+}
+
+code {
+  background-color: $negro;
+  color:  $blanco;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* Agregando nuevos botones animados con hover para descarga Windows y Mac Store */
+
+.contenedor-descargas {
+  width: 100%;
+  position: relative;
+  margin: 3em;
+
+  ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  li {
+    display: inline-block;
+    margin: 0px;
+  }
+}
+
+.descargar {
+  width: 200px;
+  height: 75px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: $blanco;
+  cursor: pointer;
+  border: 1px solid $blanco;
+
+  > .fa {
+    color: $blanco;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+}
+
+.df, .dfn {
+  position: absolute;
+  left: 70px;
+}
+
+.df {
+  top: 20px;
+  font-size: .68em;
+}
+
+.dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+
+.descargar:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+@include tablet {
+  .info-software img {
+    max-width: 80%;
+  }
+
+  .texto-info-software {
+    text-align: left;
+    width: 90%;
+    gap: 0.5em;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .bgimage-software {
+    display: none;
+  }
+}

@@ -1,103 +1,80 @@
 /* Redes Sociales */
 
-*:focus,
-*:active {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
+/* Centrar Iconos */
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.iconos-social {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
 
-.iconos-social .icono {
+  &:hover {
+    color: $blanco;
+
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -150%);
+    }
+  }
+    
+  &:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  &--youtube { @include social-icon($youtube); }
+  &--twitter { @include social-icon($twitter); }
+  &--facebook { @include social-icon($facebook); }
+  &--instagram { @include social-icon($instagram); }
+  &--github { @include social-icon($github); }
+  
+  i {
     position: relative;
-    background-color: $blanco;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    top: 1px;
+  }
 }
 
-.iconos-social .tooltip {
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.2rem .5rem;
+  border-radius: 10px;
+  font-size: 0.2rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+  &:after {
+    display: block;
     position: absolute;
-    top: 0;
-    font-size: 14px;
-    background-color: $blanco;
-    color: $blanco;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.iconos-social .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background-color: $blanco;
-    bottom: -3px;
+    bottom: 1px;
     left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.iconos-social .icono:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.iconos-social .icono:hover span,
-.iconos-social .icono:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.iconos-social .facebook:hover,
-.iconos-social .facebook:hover .tooltip,
-.iconos-social .facebook:hover .tooltip::before {
-    background-color: $facebook;
-    color: $blanco;
-}
-
-.iconos-social .twitter:hover,
-.iconos-social .twitter:hover .tooltip,
-.iconos-social .twitter:hover .tooltip::before {
-    background-color: $twitter;
-    color: $blanco;
-}
-
-.iconos-social .instagram:hover,
-.iconos-social .instagram:hover .tooltip,
-.iconos-social .instagram:hover .tooltip::before {
-    background-color: $instagram;
-    color: $blanco;
-}
-
-.iconos-social .github:hover,
-.iconos-social .github:hover .tooltip,
-.iconos-social .github:hover .tooltip::before {
-    background-color: $github;
-    color: $blanco;
-}
-
-.iconos-social .youtube:hover,
-.iconos-social .youtube:hover .tooltip,
-.iconos-social .youtube:hover .tooltip::before {
-    background-color: $youtube;
-    color: $blanco;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
 }

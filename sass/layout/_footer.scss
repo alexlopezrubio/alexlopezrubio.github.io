@@ -24,3 +24,12 @@ footer {
 		font-weight: 300;
 	}
 }
+
+/* Posicion especifica de footer con poco contenido de main */
+
+.footer-software {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
