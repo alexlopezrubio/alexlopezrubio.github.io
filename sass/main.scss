@@ -1,0 +1,38 @@
+// Resets generales
+@import './base/resets';
+
+// variables colores
+@import './abstracts/variables';
+
+// Mixins
+@import './components/mixins';
+
+// Header
+@import './layout/header';
+
+// Hero
+@import './layout/hero';
+
+// Producto principal
+@import './components/producto';
+
+// Estilo video
+@import './components/video';
+
+// Estilo footer
+@import './layout/footer';
+
+// Redes Sociales
+@import './layout/social';
+
+// Seccion Hardware
+@import './components/grids-hardware';
+
+// Seccion Software
+@import './components/info-software';
+
+// Seccion Documentacion
+@import './components/info-documentacion';
+
+// Seccion Contacto
+@import './components/forma-contacto';

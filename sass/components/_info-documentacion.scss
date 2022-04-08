@@ -1,0 +1,120 @@
+/* ------ Inicia Seccion de Documentacion ---- */
+
+.info-documentacion {
+  padding-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 1em;
+
+  h1 {
+    color: $rojo-base;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+.temas-documentacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+
+  a {
+    text-decoration: none;
+    color: $negro;
+    padding-right: 12px;
+  }
+}
+
+.toptitle {
+  color: $blanco;
+  text-align: center;
+  width: 100%;
+  background-color: $negro;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+/* Barra de busqueda bootstrap con icono */
+
+.centrar-barra-busqueda {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.has-search {
+  .form-control {
+    padding-left: 2.375rem;
+  }
+
+  .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: $gris-tenue;
+  }
+}
+
+/* Lista Grid Documentacion */
+
+.grid-lista-documentacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+a.servicio-documentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 275px;
+  width: 350px;
+  text-decoration: none;
+  background-color: $blanco;
+  padding: 30px 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+
+  span {
+    &.title {
+      color: $negro;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    color: $negro;
+    display: block;
+    text-align: center;
+  }
+}
+
+.grid-lista-documentacion img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.servicio-documentacion {
+  h2, p {
+    width: 50%;
+  }
+}
